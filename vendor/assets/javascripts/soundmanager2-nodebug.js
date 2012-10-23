@@ -1122,7 +1122,7 @@ function SoundManager(smURL, smID) {
     };
     _resetProperties = function(retainPosition) {
       if (!retainPosition) {
-        _onPositionItems = [];
+//        _onPositionItems = [];
         _onPositionFired = 0;
       }
       _onplay_called = false;
