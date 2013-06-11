@@ -1,6 +1,6 @@
-# SoundManager on Rails
+# SoundManager on Rails [![Gem Version](https://badge.fury.io/rb/soundmanager-rails.png)](http://badge.fury.io/rb/soundmanager-rails)
 
-This is the original [SoundManager2](http://www.schillmania.com/projects/soundmanager2/) wrapped in a gem for easy use with Rail's asset pipeline.
+This is the original [SoundManager2](http://www.schillmania.com/projects/soundmanager2/) wrapped in a gem for easy use with Rails' asset pipeline.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Add this to your Sprockets manifest:
 
     //= require soundmanager
 
-> This asset will load `soundmanager2.js` or `soundmanager2-nodebug.js` in case of your `Rails.env` being set to `development` or `<anything>`, respectively.  
+> This asset will load `soundmanager2.js` or `soundmanager2-nodebug.js` in case of your `Rails.env` being set to `development` or `<anything>`, respectively.
 > Additionally, `window.soundManager.url` will be set to the proper asset url to load fallback swf files.
 
 and you're good to go.
@@ -34,6 +34,9 @@ Of course, you can just load the SoundManager library itself using one of the fo
     //= require soundmanager2-nodebug
     //= require soundmanager2-nodebug-jsmin
 
+> **Note**
+> This gem uses the cross-domain enabled flash files distributed with sm2 by default to make integration with external asset hosts easy.
+> Thanks to [@liufengyun](https://github.com/liufengyun) for testing this.
 
 ## Contributing
 
@@ -45,5 +48,5 @@ Of course, you can just load the SoundManager library itself using one of the fo
 
 # License
 
-See the LICENSE file.  
+See the LICENSE file.
 SoundManager2 is BSD-licensed.
