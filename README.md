@@ -1,6 +1,6 @@
-# SoundManager on Rails
+# SoundManager on Rails [![Gem Version](https://badge.fury.io/rb/soundmanager-rails.png)](http://badge.fury.io/rb/soundmanager-rails)
 
-This is the original [SoundManager2](http://www.schillmania.com/projects/soundmanager2/) wrapped in a gem for easy use with Rail's asset pipeline.
+This is the original [SoundManager2](http://www.schillmania.com/projects/soundmanager2/) wrapped in a gem for easy use with Rails' asset pipeline.
 
 ## Installation
 
@@ -34,6 +34,9 @@ Of course, you can just load the SoundManager library itself using one of the fo
     //= require soundmanager2-nodebug
     //= require soundmanager2-nodebug-jsmin
 
+> **Note**  
+> This gem uses the cross-domain enabled flash files distributed with sm2 by default to make integration with external asset hosts easy.  
+> Thanks to [@liufengyun](https://github.com/liufengyun) for testing this.
 
 ## Contributing
 
